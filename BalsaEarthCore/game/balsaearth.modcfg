@@ -1,0 +1,32 @@
+ModCFG
+{
+	// ModCFG files describe the content contained in a mod. They are essentially a table of contents listing the configs, assets, assemblies and anything that should be loaded into the game as part of a mod.
+	// they also contain information about the mod itself, like the package title, author, version information, dependencies and so on.
+	title = BalsaEarth
+	author = Darklight Industries
+	modVersion = 0.1.0
+	requiresGameVersion = 0.101.0
+	
+	Scenery
+	{
+		name = Earth
+		
+		description = The world is your oyster, I just hope you like oysters.
+				
+		abFilePath = Addons/BalsaEarth/balsaearth.fob	
+		mainScene = Assets/balsaearth.unity
+		
+		imgPath = Addons/BalsaEarth/earth.png	
+		posterImgPath = Addons/BalsaEarth/earthbanner.png
+		
+		cost = 0
+		startAvailable = True
+	}
+    Plugin
+    {
+        name = BalsaEarthCore
+        description = BalsaEarthCore
+        asmpath = Addons\BalsaEarth\BalsaEarthCore.dll
+        order = 100
+    }
+}

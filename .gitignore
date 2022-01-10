@@ -1,0 +1,9 @@
+data.bin
+meta.txt
+.vs
+.vscode
+obj
+bin
+External/Managed
+*.user
+output

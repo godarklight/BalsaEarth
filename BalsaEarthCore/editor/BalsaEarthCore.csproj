@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../src/*.cs" />
+    <EmbeddedResource Include="data.zip" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Balsa.Core">
+      <HintPath>../../External/Managed/Balsa.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>../../External/Managed/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="FloatingUtil">
+      <HintPath>../../External/Managed/FloatingUtil.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>../../External/Managed/Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>../../External/Managed/UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>../../External/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>../../External/Managed/UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>../../External/Managed/UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="../include/modexport.cfg" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="../include/BalsaEarth.modcfg" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="../include/earth.png" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="../include/earthposter.jpg" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
